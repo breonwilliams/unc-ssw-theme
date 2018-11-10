@@ -1,2 +1,2 @@
-# gtcc-theme
-GTCC Wordpress Theme
+# unc-ssw-theme
+UNC School of Social Work Wordpress Theme
