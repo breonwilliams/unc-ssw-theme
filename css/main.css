@@ -3768,6 +3768,16 @@ Featured Image
 	left: 0
 }
 
+.tier-header.tier-events:after,
+.tier-header.t2-header.tier-events:after{
+	content: '';
+	background-color: transparent;
+	height: 10px;
+	width: 51%;
+	position: absolute;
+	left: 0
+}
+
 .tier-header .header-inner-content {
 	position: absolute;
 	z-index: 2;

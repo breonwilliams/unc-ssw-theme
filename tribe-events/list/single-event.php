@@ -27,19 +27,7 @@ $organizer = tribe_get_organizer();
 
 ?>
 
-	<div class="event-calendar">
-		<div class="tribe-event-post">
-			<div class="row">
-				<div class="col-md-offset-2 col-md-5">
 
-				</div>
-				<div class="col-md-5">
-
-				</div>
-			</div>
-
-		</div>
-	</div>
 
 <div class="event-calendar">
 	<div class="tribe-event-post padbot-15 marginbot-15 border-btm">

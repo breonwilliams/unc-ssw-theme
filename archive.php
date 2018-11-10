@@ -1,22 +1,22 @@
-<?php 
+<?php
 /**
  * Displaying archive page (category, tag, archives post, author's post)
- * 
+ *
  * @package bootstrap-basic
  */
 
-get_header(); 
+get_header();
 
 /**
  * determine main column size from actived sidebar
  */
 $main_column_size = bootstrapBasicGetMainColumnSize();
-?> 
-<?php get_sidebar('left'); ?> 
+?>
+<?php get_sidebar('left'); ?>
 				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
 					<main id="main" class="site-main" role="main">
 						<div class="blog">
-						<?php if (have_posts()) { ?> 
+						<?php if (have_posts()) { ?>
 
 						<header class="page-header">
 							<h1 class="page-title">
@@ -67,7 +67,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 									_e('Archives', 'bootstrap-basic');
 
 								endif;
-								?> 
+								?>
 							</h1>
 
 							<?php
@@ -78,8 +78,8 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 							} //endif;
 							?>
 						</header><!-- .page-header -->
-						
-						<?php 
+
+						<?php
 						/* Start the Loop */
 						while (have_posts()) {
 							the_post();
@@ -89,18 +89,18 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 							 */
 							get_template_part('content', get_post_format());
-						} //endwhile; 
-						?> 
+						} //endwhile;
+						?>
 
-						<?php bootstrapBasicPagination(); ?> 
+						<?php bootstrapBasicPagination(); ?>
 
-						<?php } else { ?> 
+						<?php } else { ?>
 
-						<?php get_template_part('no-results', 'archive'); ?> 
+						<?php get_template_part('no-results', 'archive'); ?>
 
 						<?php } //endif; ?>
 						</div>
 					</main>
 				</div>
-<?php get_sidebar('right'); ?> 
-<?php get_footer(); ?> 
+<?php get_sidebar('right'); ?>
+<?php get_footer(); ?>
