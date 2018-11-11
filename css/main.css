@@ -403,7 +403,8 @@ blockquote p {
 	color: #3a3d41;
 }
 
-.staff-category span:after {
+.staff-category span:after,
+.featuredEvent-hero h1 span:after {
 	content: '';
 	height: 3px;
 	width: 10%;
@@ -2498,6 +2499,44 @@ Alerts
 }
 
 /*
+Events
+================================== */
+
+.featuredEvent-hero {
+	position: relative;
+	background: center center no-repeat;
+	background-size: 100%;
+}
+
+.ftEvent-overlay {
+	padding: 50px 30px;
+	background: black;
+}
+
+@media (min-width: 768px) {
+	.ftEvent-overlay {
+		width: 40%;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.tribe-bar-date-filter,
+	.tribe-bar-search-filter {
+		float: left;
+		width: 40%;
+		padding-right: 15px;
+	}
+
+	.tribe-bar-submit {
+		float: left;
+		width: 20%;
+		margin-top: 30px;
+	}
+}
+
+
+/*
 Event Courses
 ================================== */
 ul.event-courses {
@@ -3571,12 +3610,12 @@ Full Width Sections
 }
 
 .overlay-lightblue {
-	background: rgba(123, 174, 212,.7);
+	background: rgba(123, 174, 212,.9);
 	color: #fff;
 }
 
 .overlay-blue {
-	background: rgba(75, 156, 211,.7);
+	background: rgba(75, 156, 211,.9);
 	color: #fff;
 }
 

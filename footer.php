@@ -28,9 +28,9 @@
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4 text-center">
 				<?php
-				$fms_copyright = get_theme_mod( 'copyright_textbox', '' );
-				if($fms_copyright) { ?>
-					<small>&copy; <?php echo date('Y'); ?> <?php echo $fms_copyright; ?></small>
+				$footer_copyright = get_theme_mod( 'copyright_textbox', '' );
+				if($footer_copyright) { ?>
+					<small>&copy; <?php echo date('Y'); ?> <?php echo $footer_copyright; ?></small>
 				<?php } else { ?>
 					<small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></small>
 				<?php } ?>
