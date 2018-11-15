@@ -7,7 +7,7 @@
 		<?php endif; ?>
 
 		<div class="entry-meta">
-			<?php bootstrapBasicPostOn(); ?>
+			<p class="lead">Posted on <?php the_date(); ?></p>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

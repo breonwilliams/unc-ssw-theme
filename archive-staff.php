@@ -9,6 +9,10 @@ get_header();
 
 
 ?>
+
+<div class="col-md-12">
+	<h1 class="entry-title page-header">Directory</h1>
+</div>
 <?php get_sidebar('staffwidget'); ?>
 				<div class="col-md-12 content-area" id="main-column">
 

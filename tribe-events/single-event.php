@@ -34,8 +34,12 @@ $event_id = get_the_ID();
 
 <?php endif; ?>
 
-<?php the_title( '<h1 class="entry-title page-header tribe-events-single-event-title padtop-40">', '</h1>' ); ?>
 
+
+<!-- Event header -->
+<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
+	<?php the_title( '<h1 class="entry-title page-header tribe-events-single-event-title padtop-40">', '</h1>' ); ?>
+</div>
 <div class="event-calendar">
 	<div class="tribe-event-post pad-40">
 		<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" rel="bookmark"><div class="event-date"><time><?php $event_id = NULL; echo tribe_get_start_time ( $event_id, 'M'); ?><span><?php $event_id = NULL; echo tribe_get_start_time ( $event_id, 'd'); ?></span></time></div></a>
@@ -44,9 +48,7 @@ $event_id = get_the_ID();
 
 				<div id="tribe-events-content" class="tribe-events-single">
 
-					<p class="tribe-events-back">
-						<a href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( '&laquo; ' . esc_html_x( 'All %s', '%s Events plural label', 'the-events-calendar' ), $events_label_plural ); ?></a>
-					</p>
+
 
 					<!-- Notices -->
 					<?php tribe_the_notices() ?>
@@ -59,10 +61,7 @@ $event_id = get_the_ID();
 						<?php endif; ?>
 					</div>
 
-					<!-- Event header -->
-					<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
 
-					</div>
 					<!-- #tribe-events-header -->
 
 					<?php while ( have_posts() ) :  the_post(); ?>
@@ -88,11 +87,11 @@ $event_id = get_the_ID();
 					<!-- Event footer -->
 					<div id="tribe-events-footer">
 						<!-- Navigation -->
-						<nav class="tribe-events-nav-pagination" aria-label="<?php printf( esc_html__( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?>">
+						<!-- <nav class="tribe-events-nav-pagination" aria-label="<?php printf( esc_html__( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?>">
 							<ul class="tribe-events-sub-nav">
 								<li class="tribe-events-nav-previous"><?php tribe_the_prev_event_link( '<span>&laquo;</span> %title%' ) ?></li>
 								<li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '%title% <span>&raquo;</span>' ) ?></li>
-							</ul>
+							</ul> -->
 							<!-- .tribe-events-sub-nav -->
 						</nav>
 					</div>
@@ -100,6 +99,11 @@ $event_id = get_the_ID();
 
 				</div><!-- #tribe-events-content -->
 
+			</div>
+			<div class="col-md-12">
+				<p class="tribe-events-back">
+					<a href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( '&laquo; ' . esc_html_x( 'Back to %s', '%s Events plural label', 'the-events-calendar' ), $events_label_plural ); ?></a>
+				</p>
 			</div>
 		</div>
 
