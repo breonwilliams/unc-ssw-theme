@@ -102,7 +102,7 @@ $event_id = get_the_ID();
 			</div>
 			<div class="col-md-12">
 				<p class="tribe-events-back">
-					<a href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( '&laquo; ' . esc_html_x( 'Back to %s', '%s Events plural label', 'the-events-calendar' ), $events_label_plural ); ?></a>
+					<a class="tribe-events-back-to-events" href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( '&laquo; ' . esc_html_x( 'Back to %s', '%s Events plural label', 'the-events-calendar' ), $events_label_plural ); ?></a>
 				</p>
 			</div>
 		</div>

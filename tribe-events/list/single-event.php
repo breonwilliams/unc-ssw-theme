@@ -30,7 +30,7 @@ $organizer = tribe_get_organizer();
 
 
 <div class="event-calendar">
-	<div class="tribe-event-post padbot-15 marginbot-15 border-btm">
+	<div class="tribe-event-post padbot-30 marginbot-30 border-btm">
 	<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" rel="bookmark"><div class="event-date"><time><?php $event_id = NULL; echo tribe_get_start_time ( $event_id, 'M'); ?><span><?php $event_id = NULL; echo tribe_get_start_time ( $event_id, 'd'); ?></span></time></div></a>
 	<div class="row">
 		<div class="col-md-offset-2 col-md-5">

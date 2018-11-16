@@ -42,6 +42,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
+	border-top: 8px solid #4B9CD3;
 }
 
 /* =WordPress Core
@@ -625,9 +626,9 @@ Header
 }
 
 .header-top-area{
-	background-color: #2f2f2f;
+	background-color: #ffffff;
 	line-height: 33px;
-	color: #dddddd;
+	color: #121212;
 	font-size: 14px;
 }
 .header-top-left{}
@@ -2526,10 +2527,7 @@ Events
 	.ftEvent-overlay {
 		width: 40%;
 	}
-}
 
-
-@media (min-width: 768px) {
 	.tribe-bar-date-filter,
 	.tribe-bar-search-filter {
 		float: left;
@@ -2540,7 +2538,26 @@ Events
 	.tribe-bar-submit {
 		float: left;
 		width: 20%;
-		margin-top: 30px;
+	}
+
+}
+
+.tribe-bar-submit {
+	margin-top: 30px;
+}
+
+.tribe-events-abbr {
+	text-decoration: none;
+}
+
+.tribe-events-meta-group {
+	color: #121212;
+}
+
+
+@media (max-width: 768px) {
+	.ftEvent-overlay {
+		padding: 10px 30px;
 	}
 }
 
@@ -2553,6 +2570,11 @@ Events
 	margin: 0 -4% 30px 0;
 }
 
+.tribe-events-read-more, .tribe-events-back-to-events {
+	color: #13294B;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 /*
 Event Courses
 ================================== */
@@ -3813,11 +3835,11 @@ Featured Image
 }
 
 .tier-header.t2-header:after {
-	background-color: #cfb87c;
+	background-color: #767676;
 }
 
 .tier-header.t2-header .header-inner-content {
-	background: rgba(207, 184, 124, 0.9);
+	background: rgba(118, 118, 118, 0.9);
 }
 
 .tier-header.t2-header .header-inner-content h1 {
