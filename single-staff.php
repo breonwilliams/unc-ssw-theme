@@ -120,6 +120,202 @@ get_header();
 
 
 
+
+
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('degrees_and_licenses') ):
+							?>
+							<h3 class="text-lightblue">Degrees and Licenses</h3>
+									<?php
+									// loop through the rows of data
+									while ( have_rows('degrees_and_licenses') ) : the_row();
+										// display a sub field value
+										?>
+										<?php the_sub_field('staff_degrees_and_licenses'); ?>
+										<?php
+									endwhile;
+									?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('primary_program') ):
+							?>
+							<h3 class="text-lightblue">Primary Program</h3>
+							<?php
+							// loop through the rows of data
+							while ( have_rows('primary_program') ) : the_row();
+								// display a sub field value
+								?>
+								<?php the_sub_field('staff_primary_program'); ?>
+								<?php
+							endwhile;
+							?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('certifications') ):
+							?>
+							<h3 class="text-lightblue">Certifications</h3>
+							<?php
+							// loop through the rows of data
+							while ( have_rows('certifications') ) : the_row();
+								// display a sub field value
+								?>
+								<?php the_sub_field('staff_certifications'); ?>
+								<?php
+							endwhile;
+							?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('research_and_professional_interests') ):
+							?>
+							<h3 class="text-lightblue">Research and Professional Interest</h3>
+							<?php
+							// loop through the rows of data
+							while ( have_rows('research_and_professional_interests') ) : the_row();
+								// display a sub field value
+								?>
+								<?php the_sub_field('staff_research_and_professional_interests'); ?>
+								<?php
+							endwhile;
+							?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('principal_investigator') ):
+							?>
+							<h3 class="text-lightblue">Principal Investigator</h3>
+							<?php
+							// loop through the rows of data
+							while ( have_rows('principal_investigator') ) : the_row();
+								// display a sub field value
+								?>
+								<?php the_sub_field('staff_principal_investigator'); ?>
+								<?php
+							endwhile;
+							?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('co_investigator') ):
+							?>
+							<h3 class="text-lightblue">Co-Investigator</h3>
+							<?php
+							// loop through the rows of data
+							while ( have_rows('co_investigator') ) : the_row();
+								// display a sub field value
+								?>
+								<?php the_sub_field('staff_co_investigator'); ?>
+								<?php
+							endwhile;
+							?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('other_projects') ):
+							?>
+							<h3 class="text-lightblue">Other Projects</h3>
+							<?php
+							// loop through the rows of data
+							while ( have_rows('other_projects') ) : the_row();
+								// display a sub field value
+								?>
+								<?php the_sub_field('staff_other_projects'); ?>
+								<?php
+							endwhile;
+							?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('recent_publications') ):
+							?>
+							<h3 class="text-lightblue">Recent Publications</h3>
+							<?php
+							// loop through the rows of data
+							while ( have_rows('recent_publications') ) : the_row();
+								// display a sub field value
+								?>
+								<?php the_sub_field('staff_recent_publications'); ?>
+								<?php
+							endwhile;
+							?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('presentations_workshops_and_media') ):
+							?>
+							<h3 class="text-lightblue">Presentations, Workshops and Media</h3>
+							<?php
+							// loop through the rows of data
+							while ( have_rows('presentations_workshops_and_media') ) : the_row();
+								// display a sub field value
+								?>
+								<?php the_sub_field('staff_presentations_workshops_and_media'); ?>
+								<?php
+							endwhile;
+							?>
+							<?php
+						else :
+							// no rows found
+						endif;
+						?>
+
+
+
+
+
 						<?php
 
 						// check if the repeater field has rows of data
