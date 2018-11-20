@@ -25,6 +25,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
+                <p>
+                    <?php if ( get_theme_mod( 'm2_logo' ) ) : ?>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-navbar-brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                            <img src="<?php echo get_theme_mod( 'm2_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+                        </a>
+                    <?php else : ?>
+
+                    <?php endif; ?>
+                </p>
                 <?php
                 $fms_copyright = get_theme_mod( 'copyright_textbox', '' );
                 if($fms_copyright) { ?>

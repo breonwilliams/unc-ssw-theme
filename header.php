@@ -155,14 +155,15 @@ function tier_header(){
             $imgID = get_post_thumbnail_id($post->ID); //get the id of the featured image
             $featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
             $imgURL = $featuredImage[0]; //get the url of the image out of the array
-            echo"<div class='tier-header t2-header'><div class='img-container background-image' style='background-image: url( $imgURL );'><div class='header-inner-content'><div class='contained'><h1>$parent_title</h1></div></div></div></div>";
+            echo"<div class='tier-header t2-header'><div class='img-container background-image' style='background-image: url( $imgURL );'></div></div>";
         };
     }
 }
 ?>
 
-<?php tier_header(); ?>
+
 <?php the_breadcrumb(); ?>
+<?php tier_header(); ?>
 
 
 <?php if( is_singular( 'staff' ) ): ?>
