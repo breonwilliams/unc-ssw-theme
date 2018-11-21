@@ -62,7 +62,7 @@ if (!function_exists('bootstrapBasicSetup')) {
 add_action('after_setup_theme', 'bootstrapBasicSetup');
 
 if ( function_exists( 'add_theme_support' ) ) {
-	add_image_size( 'article_thumbnail', 280, 280, true ); // Posts thumnail
+	add_image_size( 'article_thumbnail', 800, 800, true ); // Posts thumnail
 
 }
 

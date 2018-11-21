@@ -510,13 +510,6 @@ Thumbnail
 	margin-bottom: 30px;
 }
 
-.rct-post-content.caption-fixedh {
-	overflow: hidden;
-	height: 155px;
-	margin-bottom: 30px;
-	position: relative;
-}
-
 .thumbnail h3 a {
 	color: #191919;
 }
