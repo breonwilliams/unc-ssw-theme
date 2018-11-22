@@ -267,6 +267,10 @@ h6 {
 	color: #ffbf00!important;
 }
 
+.text-grey {
+	color: #767676!important;
+}
+
 .hdr-rounded {
 	background: #4B9CD3;
 	color: ##fff;
@@ -631,7 +635,9 @@ Header
 	background: #ffffff;
 	color: #151515;
 }
-
+.header-mid-area .logo {
+	padding: 7px 0;
+}
 .header-mid-area .logo img {
 	max-height: 50px;
 }
@@ -772,9 +778,10 @@ nav.affix {
 }
 
 .navbar-brand>img {
-	max-height: 50px;
+	max-height: 30px;
 	width: auto;
 	display: block;
+	margin: 10px 0;
 }
 
 
@@ -987,7 +994,7 @@ form.navbar-form[role="search"] button[type="reset"] {
 	}
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {*/
 
 	.navbar-collapse {
 		padding-right: 0;
@@ -1033,7 +1040,13 @@ form.navbar-form[role="search"] button[type="reset"] {
 	input, select, textarea {
 		font-size: 16px;
 	}
+
+.nav-form form.navbar-form[role="search"] {
+	right: 0;
+	display: flex;
+	float: right;
 }
+/*}*/
 
 
 .navbar-custom .container-fluid {
@@ -1045,7 +1058,14 @@ form.navbar-form[role="search"] button[type="reset"] {
 	position: relative;
 }
 
+@media (min-width: 768px) {
+	.nav-form, .navbar-brand {
+		display: none;
+	}
+}
+
 @media (max-width: 768px) {
+
 	form.navbar-form[role="search"] {
 		right: 15px;
 	}

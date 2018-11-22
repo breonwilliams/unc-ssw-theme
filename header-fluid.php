@@ -82,23 +82,7 @@
 							<div class="sr-only">
 								<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
 							</div>
-							<form class="navbar-form navbar-right" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-								<div class="input-group">
-									<input type="search" class="form-control pull-right" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic'); ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label', 'bootstrap-basic'); ?>">
-						<span class="input-group-btn">
-							<button type="reset" class="btn btn-red">
-								<span class="glyphicon glyphicon-remove">
-									<span class="sr-only">Close</span>
-								</span>
-							</button>
-							<button type="submit" class="btn btn-red">
-								<span class="glyphicon glyphicon-search">
-									<span class="sr-only"><?php esc_html_e('Search', 'bootstrap-basic'); ?></span>
-								</span>
-							</button>
-						</span>
-								</div>
-							</form>
+							<!--.remove form-->
 							<?php if (is_active_sidebar('header-right')) { ?>
 								<div class="pull-right">
 									<?php dynamic_sidebar('header-right'); ?>
@@ -120,7 +104,25 @@
 							<span class="icon-bar"></span>
 						</button>
 
-
+						<div class="nav-form">
+							<form class="navbar-form navbar-right" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+								<div class="input-group">
+									<input type="search" class="form-control pull-right" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic'); ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label', 'bootstrap-basic'); ?>">
+						<span class="input-group-btn">
+							<button type="reset" class="btn btn-red">
+								<span class="glyphicon glyphicon-remove">
+									<span class="sr-only">Close</span>
+								</span>
+							</button>
+							<button type="submit" class="btn btn-red">
+								<span class="glyphicon glyphicon-search">
+									<span class="sr-only"><?php esc_html_e('Search', 'bootstrap-basic'); ?></span>
+								</span>
+							</button>
+						</span>
+								</div>
+							</form>
+						</div>
 					</div>
 
 					<div class="collapse navbar-collapse navbar-primary-collapse">
