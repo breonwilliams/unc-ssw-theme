@@ -996,10 +996,10 @@ form.navbar-form[role="search"] button[type="reset"] {
 
 /*@media (min-width: 768px) {*/
 
-	.navbar-collapse {
+	/*.navbar-collapse {
 		padding-right: 0;
 		padding-left: 0;
-	}
+	}*/
 
 	.navbar-form .input-group {
 		margin: 0;
