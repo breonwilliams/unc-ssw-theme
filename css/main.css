@@ -435,6 +435,10 @@ blockquote p {
 	z-index: 1;
 }
 
+.post-type-archive.post-type-archive-staff #breadcrumbs {
+	display: none;
+}
+
 /*
 Image
 =========================== */
@@ -2605,10 +2609,29 @@ Events
 	margin: 0 -4% 30px 0;
 }
 
-.tribe-events-read-more, .tribe-events-back-to-events {
+.tribe-events-read-more, .tribe-events-back-to-events,
+.tribe-events-nav-previous.tribe-events-nav-left a,
+.tribe-events-nav-next.tribe-events-nav-right a{
 	color: #13294B;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.tribe-events-nav-next.tribe-events-nav-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+ }
+
+.tribe-events-nav-previous.tribe-events-nav-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.tribe-events-nav-pagination {
+	position: relative;
+	padding: 20px 0;
 }
 /*
 Event Courses
@@ -3549,7 +3572,8 @@ Pagination
 }
 
 .pagination > li > a,
-.pagination>li>span {
+.pagination>li>span,
+.post-nav .page-numbers {
 	font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
@@ -3561,6 +3585,30 @@ Pagination
 	margin-bottom: 7px;
 	margin-top: 7px;
 	border: none;
+}
+
+.post-nav.col-md-12 {
+	padding: 40px 0;
+	position: relative;
+	text-align: center;
+}
+
+.post-nav.col-md-12 .prev.page-numbers, .post-nav.col-md-12 .next.page-numbers {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+
+.post-nav.col-md-12 .prev.page-numbers {
+	transform: translateY(-50%);
+	top: 50%;
+	left: 0;
+}
+
+.post-nav.col-md-12 .next.page-numbers {
+	transform: translateY(-50%);
+	top: 50%;
+	right: 0;
 }
 
 .dataTables_wrapper .pagination > li > a,
@@ -3575,7 +3623,8 @@ Pagination
 }
 .pagination > .active > a,
 .pagination>li>span,
-.pagination>li.active>span {
+.pagination>li.active>span,
+.page-numbers.current {
 	color: #4B9CD3;
 	background-color: transparent;
 	border-radius: 0;

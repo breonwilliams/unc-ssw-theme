@@ -390,11 +390,11 @@ function the_breadcrumb() {
 
 	if (is_home() || is_front_page()) {
 
-		if ($show_on_home == 1) echo '<section class="section-grey"><div class="container"><div class="breadcrumb"><a href="' . $home_link . '">' . $text['home'] . '</a></div></section>';
+		if ($show_on_home == 1) echo '<section class="section-grey" id="breadcrumbs"><div class="container"><div class="breadcrumb"><a href="' . $home_link . '">' . $text['home'] . '</a></div></section>';
 
 	} else {
 
-		echo '<section class="section-grey"><div class="container"><div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">';
+		echo '<section class="section-grey" id="breadcrumbs"><div class="container"><div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">';
 		if ($show_home_link == 1) {
 			echo '<a href="' . $home_link . '" rel="v:url" property="v:title">' . $text['home'] . '</a>';
 			if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
