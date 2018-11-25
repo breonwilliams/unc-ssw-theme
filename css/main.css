@@ -435,7 +435,8 @@ blockquote p {
 	z-index: 1;
 }
 
-.post-type-archive.post-type-archive-staff #breadcrumbs {
+.post-type-archive.post-type-archive-staff #breadcrumbs,
+.search-results #breadcrumbs {
 	display: none;
 }
 
@@ -3653,16 +3654,23 @@ Pagination
 	border-top-left-radius: 0;
 	border-radius: 50%;
 	border: 1px solid #ddd;
-	position: absolute;
-	left: 0;
 }
 .pagination li:last-child a {
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
 	border-radius: 50%;
 	border: 1px solid #ddd;
-	position: absolute;
-	right: 0;
+}
+
+@media (min-width:767px) {
+	.pagination li:first-child a {
+		position: absolute;
+		left: 0;
+	}
+	.pagination li:last-child a {
+		position: absolute;
+		right: 0;
+	}
 }
 
 .dataTables_wrapper .pagination li:first-child a {
