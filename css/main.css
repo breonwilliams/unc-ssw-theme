@@ -2853,7 +2853,7 @@ Articles
 
 @media (min-width: 1023px) {
 	.blog .entry-image {
-		max-width: none;
+		max-width: 300px;
 	}
 }
 
@@ -3571,6 +3571,11 @@ Pagination
 	margin: 20px 0 0;
 }
 
+.posts-pagination {
+	position: relative;
+	text-align: center;
+}
+
 .pagination > li > a,
 .pagination>li>span,
 .post-nav .page-numbers {
@@ -3648,12 +3653,16 @@ Pagination
 	border-top-left-radius: 0;
 	border-radius: 50%;
 	border: 1px solid #ddd;
+	position: absolute;
+	left: 0;
 }
 .pagination li:last-child a {
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
 	border-radius: 50%;
 	border: 1px solid #ddd;
+	position: absolute;
+	right: 0;
 }
 
 .dataTables_wrapper .pagination li:first-child a {

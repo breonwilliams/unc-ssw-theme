@@ -228,7 +228,7 @@ if (!function_exists('bootstrapBasicPagination')) {
 			unset($big);
 
 			if (is_array($pagination_array) && !empty($pagination_array)) {
-				echo '<nav class="' . $pagination_align_class . '">';
+				echo '<nav class="posts-pagination ' . $pagination_align_class . '">';
 				echo '<ul class="pagination">';
 				foreach ($pagination_array as $page) {
 					echo '<li';
