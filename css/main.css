@@ -958,6 +958,12 @@ form.navbar-form[role="search"] button[type="reset"] {
 	display: none;
 }
 
+@media (max-width: 768px) {
+	.header-mid-area #search-button {
+		display: none;
+	}
+}
+
 .navbar-form .input-group > .form-control {
 	width: 100%;
 	padding: 0 15px;
@@ -3670,6 +3676,11 @@ Pagination
 	.pagination li:last-child a {
 		position: absolute;
 		right: 0;
+	}
+
+	.dataTables_paginate .pagination li:last-child a,
+	.dataTables_paginate .pagination li:first-child a {
+		position: static;
 	}
 }
 

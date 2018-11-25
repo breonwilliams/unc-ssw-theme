@@ -153,3 +153,29 @@ function m2_customize_register( $wp_customize ) {
     ) ) );
 }
 add_action( 'customize_register', 'm2_customize_register' );
+
+
+function excerpt_full_customize_register( $wp_customize ) {
+
+	$wp_customize->add_section( 'themeslug_layout_section' , array(
+		'title'       => __( 'Activate Custom Post Types, Taxonomies, and Custom Fields', 'themeslug' ),
+		'priority'    => 30,
+		'description' => 'Activate custom post types, taxonomies and custom fields after proper plugins have been installed and activated.',
+	) );
+
+	$wp_customize->add_setting( 'themeslug_post_content', array(
+		'default'   => 'option1',
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'themeslug_post_content', array(
+		'label'     => __( 'Inactive/Active', 'themeslug' ),
+		'section'   => 'themeslug_layout_section',
+		'settings'  => 'themeslug_post_content',
+		'type'      => 'radio',
+		'choices'   => array(
+			'option1'   => 'Inactive',
+			'option2'   => 'Active',
+		),
+	) ) );
+}
+add_action( 'customize_register', 'excerpt_full_customize_register' );

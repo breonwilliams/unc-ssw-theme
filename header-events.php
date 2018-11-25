@@ -123,6 +123,14 @@
                     </form>
                 </div>
 
+                <?php if ( get_theme_mod( 'm1_logo' ) ) : ?>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                        <img src="<?php echo get_theme_mod( 'm1_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+                    </a>
+                <?php else : ?>
+
+                <?php endif; ?>
+
             </div>
 
             <div class="collapse navbar-collapse navbar-primary-collapse">
